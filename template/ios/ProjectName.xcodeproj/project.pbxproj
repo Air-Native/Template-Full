@@ -564,7 +564,7 @@
 			baseConfigurationReference = BC50EE45554CB58987FC4FD1 /* Pods-ProjectName-ProjectNameTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 9F2953ATBF;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -597,7 +597,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = 9F2953ATBF;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ProjectNameTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -628,7 +628,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = ProjectName/ProjectName.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9F2953ATBF;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ProjectName/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Declutter The Mind";
@@ -663,7 +663,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = ProjectName/ProjectName.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9F2953ATBF;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ProjectName/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Declutter The Mind";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
@@ -827,7 +827,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 9F2953ATBF;
+				DEVELOPMENT_TEAM = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
@@ -865,7 +865,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 9F2953ATBF;
+				DEVELOPMENT_TEAM = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
