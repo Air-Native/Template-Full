@@ -30,8 +30,8 @@ import Player from './controllers/Player'
 const PlayerInstance = new Player()
 
 /** Contacts */
-//import Contacts from 'react-native-contacts';
-const enableContacts = false;
+import Contacts from 'react-native-contacts';
+const enableContacts = true;
 
 /** IN-APP Purchase */
 import * as RNIap from 'react-native-iap';
