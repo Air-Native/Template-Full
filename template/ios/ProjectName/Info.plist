@@ -54,7 +54,6 @@
 	<string>Access to contacts is required to provide simple way to find persons in our app</string>
 	<key>UIBackgroundModes</key>
 	<array>
-		<string>audio</string>
 		<string>remote-notification</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
