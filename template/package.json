@@ -45,7 +45,7 @@
     "metro-react-native-babel-preset": "^0.64.0",
     "react-test-renderer": "^18.2.0",
     "@babel/plugin-transform-class-properties": "^7.24.7",
-    "@babel/plugin-transform-private-methods ": "^7.24.7",
+    "@babel/plugin-transform-private-methods": "^7.24.7",
     "@babel/plugin-transform-private-property-in-object": "^7.24.7"
   },
   "jest": {
