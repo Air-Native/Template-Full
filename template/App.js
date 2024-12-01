@@ -886,7 +886,7 @@ class App extends Component {
       !url.includes('auth') &&
       !url.includes('.bubbleapps.io/api/1.1/oauth_redirect')
     ) {
-      // this.webview.stopLoading();
+      this.webview.stopLoading();
       InAppBrowser.isAvailable().then(available => {
         if (available) {
           InAppBrowser.open(url, {
@@ -898,6 +898,7 @@ class App extends Component {
           });
         }
       });
+      
       return false;
     } else {
       this.setState({
