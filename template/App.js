@@ -688,11 +688,6 @@ class App extends Component {
 	/** Извлекаем прямо из бабла функции, тут же можно прописать загрузку файлов в bubble */
 	publishState = this.invoke.bind('publishState');
 	triggerEvent = this.invoke.bind('triggerEvent');
-	canUploadFile = this.invoke.bind('canUploadFile');
-	uploadFile = this.invoke.bind('uploadFile');
-
-	triggerRightButton = this.invoke.bind('rightButton');
-	triggerCenterButton = this.invoke.bind('centerButton');
 
 	permissionsGet = async () => {
 
