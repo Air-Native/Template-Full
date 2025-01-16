@@ -371,7 +371,7 @@ class App extends Component {
 			}
 	
 			// Finish the transaction
-			RNIap.finishTransaction(event, true)
+			RNIap.finishTransaction({purchase: event})
 			  .then((finished) => {
 				console.log('Transaction finished successfully!', finished);
 				resolve(event);
@@ -381,7 +381,6 @@ class App extends Component {
 				reject('Error finishing transaction');
 			  });
 	
-			resolve(event);
 		  });
 	
 		  try {
