@@ -12,6 +12,7 @@ import {
 	SafeAreaView,
 	Linking,
 	AppState,
+	NativeModules,
 } from 'react-native';
 
 import { WebView } from 'react-native-webview';
@@ -25,11 +26,14 @@ import RNBootSplash from 'react-native-bootsplash';
 import { URL } from 'react-native-url-polyfill';
 import changeNavigationBarColor from 'react-native-navigation-bar-color';
 import KeepAwake from 'react-native-keep-awake';
+
 import Player from './controllers/Player'
 
 import OneSignal from './controllers/OneSignal'
 
 const PlayerInstance = new Player()
+
+const { ImageClipboard } = NativeModules;
 
 /** Contacts */
 import Contacts from 'react-native-contacts';
@@ -175,6 +179,8 @@ class App extends Component {
 		this.invoke.define('getPermissionsUser', this.getPermissionsUser);
 		this.invoke.define('openExternalLink', this.openExternalLink);
 
+		this.invoke.define('copyBase64ImageToClipboard', this.copyBase64ImageToClipboard);
+
 		this.invoke.define('keepAwake', this.changeKeepAwake);
 
 		this.invoke.define('getContacts', this.getContacts);
@@ -197,6 +203,22 @@ class App extends Component {
 	componentWillUnmount() {
 		RNIap.endConnection();
 		this.appStateChecker.remove();
+	}
+
+	/** Copy Image To Clipboard */
+	copyBase64ImageToClipboard = (base64Image) => {
+		if (Platform.OS === 'ios') return;
+
+
+		const pureBase64 = base64Image.replace(/^data:image\/\w+;base64,/, ""); // Remove data prefix
+
+			ImageClipboard.copyBase64ImageToClipboard(pureBase64)
+				.then(() => {
+					console.log('Image copied to clipboard');
+				})
+				.catch((error) => {
+					console.error(error);
+				})
 	}
 
 	/** Open External Link */
