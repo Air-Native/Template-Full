@@ -2,12 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CADisableMinimumFrameDurationOnPhone</key>
+	<true/>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
 	<string>ProjectName</string>
-	<key>LSMinimumSystemVersion</key>
-  	<string>13.0</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -19,69 +19,34 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
-	<key>CFBundleURLTypes</key>
-	<array>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLName</key>
-			<string>ProjectName</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>projectname</string>
-			</array>
-		</dict>
-	</array>
 	<key>CFBundleVersion</key>
-	<string>1</string>
-	<key>LSApplicationQueriesSchemes</key>
-	<array>
-		<string>comgooglemaps</string>
-		<string>twitter</string>
-		<string>whatsapp</string>
-		<string>fb</string>
-		<string>google</string>
-		<string>instagram</string>
-		<string>vk</string>
-		<string>fb-messenger</string>
-		<string>tg</string>
-	</array>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>NSAppleMusicUsageDescription</key>
-	<string>Access is required so that the user can download the files they want</string>
-	<key>NSCameraUsageDescription</key>
-	<string>Access to the camera is necessary to be able to take photos and videos according to his needs</string>
-	<key>NSFaceIDUsageDescription</key>
-	<string>Access to the face id is needed to provide users with a convenient authorization method</string>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Location access is necessary to increase the comfort of using the application</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+	  <!-- Do not change NSAllowsArbitraryLoads to true, or you will risk app rejection! -->
+		<key>NSAllowsArbitraryLoads</key>
+		<false/>
+		<key>NSAllowsLocalNetworking</key>
+		<true/>
+	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Location access is necessary to increase the comfort of using the application</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>Access to the microphone is required so that the user can record audio or video with sound at the user's request</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Access to photos is required to upload photos as required by the user</string>
-	<key>NSContactsUsageDescription</key>
-	<string>Access to contacts is required to provide simple way to find persons in our app</string>
-	<key>UIBackgroundModes</key>
-	<array>
-		<string>remote-notification</string>
-	</array>
+	<string></string>
 	<key>UILaunchStoryboardName</key>
-	<string>BootSplash.storyboard</string>
+	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
-		<string>armv7</string>
+		<string>arm64</string>
 	</array>
-	<key>UIRequiresFullScreen</key>
-	<true/>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
